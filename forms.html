@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Registration Form</title>
+</head>
+
+<body>
+  <h2>Student Registration Form</h2>
+  <form action="" method="post" enctype="multipart/form-data">
+    <label for="name">Name: </label>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required />
+    <br />
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob" required>
+
+    <fieldset>
+      <legend>Gender:</legend>
+      <input type="radio" id="male" name="gender" value="Male" />
+      <label for="Male">Male</label>
+
+      <input type="radio" id="female" name="gender" value="Female" />
+      <label for="Female">Female</label>
+
+      <input type="radio" id="other" name="gender" value="Other" />
+      <label for="Other">Other</label>
+    </fieldset>
+    </br>
+    <label for="address">Address:</label>
+    <textarea id="address" name="address" required></textarea>
+    </br>
+
+    <label for="phone_number">Phone Number</label>
+    <input type="phone" id="phone_number" name="phone_number" placeholder="Enter your phone number" required>
+    </br>
+
+    <label for="email_address">Email Address</label>
+    <input type="email" id="email_address" name="email_address" placeholder="Enter your email address" required>
+    </br>
+
+    <br />
+    <fieldset>
+      <legend>Available Courses</legend>
+      <label for="course">Courses:</label>
+      <select id="lesson" name="lesson" multiple>
+        <option value=""></option>
+        <option value="Software Engineering">Software Engineering</option>
+        <option value="Web Technologies">Web Technologies</option>
+        <option value="Database Design">Database Design</option>
+        <option value="Dart with Flutter">Dart with Flutter</option>
+        <option value="Python Programming">Python Programming</option>
+        <option value="Entrepreneurship">Entrepreneurship</option>
+        
+      </select>
+    </fieldset>
+    <br />
+    
+    <!-- <input type="button" id="ok" name="ok" value="OK" /> -->
+    <br />
+    <input type="submit" id="register" name="register" value="Register" />
+    <input type="reset" id="cancel" name="cancel" value="Cancel" />
+      </form>
+</body>
+
+</html>
