@@ -1,0 +1,64 @@
+/* Resetting default browser styles */
+body, h1, h2, h3, h4, h5, h6, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Setting up general styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Styling individual sections */
+#about {
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+#projects {
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+#contact {
+    background-color: #f4f4f4;
+    padding: 20px;
+}
