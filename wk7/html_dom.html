@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML DOM & EVENTS</title>
+    </head>
+    <body>        
+        <p onmouseover="changeSize()" onmouseout="changeColour()" id="p_one">Hello there!</p>
+        <button id="btn_change">Change</button>
+        <button onclick="changeColour()">Change Colour</button>
+        <script>
+            const button = document.querySelector('#btn_change')
+
+            function changeText(event){
+                const p =document.querySelector('#p_one')
+                p.innerText =" Hello, General Kenobi!"
+            }
+
+            button.addEventListener('click',changeText)
+
+            document.addEventListener('keydown', (event) => {
+                console.log("You have pressed a key." + event.key)
+            })
+
+            document.addEventListener('keyup', (event) => {
+                console.log(event.key + " has been released.")
+            })
+
+            document.addEventListener('mousedown', (event) => {
+                console.log(event)
+                console.log("The mouse button has been pressed")
+            })
+
+            document.addEventListener('mouseup', () => {
+                console.log("The mouse button has been released")
+            })
+
+            function changeColour() {
+                var p = document.getElementById('p_one')
+                p.style.color = 'red'
+            }
+
+            function changeSize() {
+                let p = document.getElementById('p_one')
+                p.style.fontSize = '50px'
+                p.style.color ="violet"
+
+            }
+
+        </script>
+    </body>
+</html>
+
+<!-- querySelector();
+getElementById(); //id
+getElementByName(); //name
+getElementByTagName(); //tag name
+getElementByClassName() -->
